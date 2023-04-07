@@ -14,7 +14,6 @@ function loadProducts() {
         div.innerHTML = `
             <img class=" img-fluid" src="${product.imagen}" alt="${product.titulo}" />
             <h4>${product.titulo}</h4>
-            <p>Descripción del producto</p>
             <button id = '${product.id}-button'>Comprar</button>
         `
         fragmentProducts.appendChild(div)
