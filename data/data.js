@@ -3,7 +3,7 @@ export const productos = [
     // Abrigos
     {
         id: "abrigo-01",
-        titulo: "Abrigo 01",
+        titulo: "Abrigo ecológico de Stella McCartney",
         imagen: "./img/abrigos/01.jpg",
         categoria: {
             nombre: "Abrigos",
@@ -13,7 +13,7 @@ export const productos = [
     },
     {
         id: "abrigo-02",
-        titulo: "Abrigo 02",
+        titulo: "Abrigo de sintético de Gucci",
         imagen: "./img/abrigos/02.jpg",
         categoria: {
             nombre: "Abrigos",
@@ -23,7 +23,7 @@ export const productos = [
     },
     {
         id: "abrigo-03",
-        titulo: "Abrigo 03",
+        titulo: "Abrigo Patagonia",
         imagen: "./img/abrigos/03.jpg",
         categoria: {
             nombre: "Abrigos",
@@ -33,7 +33,7 @@ export const productos = [
     },
     {
         id: "abrigo-04",
-        titulo: "Abrigo 04",
+        titulo: "Abrigo Everlane",
         imagen: "./img/abrigos/04.jpg",
         categoria: {
             nombre: "Abrigos",
@@ -43,7 +43,7 @@ export const productos = [
     },
     {
         id: "abrigo-05",
-        titulo: "Abrigo 05",
+        titulo: "Abrigo Nanushka ",
         imagen: "./img/abrigos/05.jpg",
         categoria: {
             nombre: "Abrigos",
@@ -54,7 +54,7 @@ export const productos = [
     // Camisetas
     {
         id: "camiseta-01",
-        titulo: "Camiseta 01",
+        titulo: " Camiseta Eileen Fisher",
         imagen: "./img/camisetas/01.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -64,7 +64,7 @@ export const productos = [
     },
     {
         id: "camiseta-02",
-        titulo: "Camiseta 02",
+        titulo: "Camiseta de algodón orgánico de Veja",
         imagen: "./img/camisetas/02.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -74,7 +74,7 @@ export const productos = [
     },
     {
         id: "camiseta-03",
-        titulo: "Camiseta 03",
+        titulo: "Camiseta de cachemir reciclado de Naadam",
         imagen: "./img/camisetas/03.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -84,7 +84,7 @@ export const productos = [
     },
     {
         id: "camiseta-04",
-        titulo: "Camiseta 04",
+        titulo: "Camiseta con cáñamo orgánico de la Patagonia ",
         imagen: "./img/camisetas/04.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -94,7 +94,7 @@ export const productos = [
     },
     {
         id: "camiseta-05",
-        titulo: "Camiseta 05",
+        titulo: "Camiseta de lana orgánica de Filippa K ",
         imagen: "./img/camisetas/05.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -104,7 +104,7 @@ export const productos = [
     },
     {
         id: "camiseta-06",
-        titulo: "Camiseta 06",
+        titulo: "Camiseta de Alta Costura  CCN",
         imagen: "./img/camisetas/06.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -114,7 +114,7 @@ export const productos = [
     },
     {
         id: "camiseta-07",
-        titulo: "Camiseta 07",
+        titulo: "Camiseta de algodón reciclado de Stella McCartney",
         imagen: "./img/camisetas/07.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -124,7 +124,7 @@ export const productos = [
     },
     {
         id: "camiseta-08",
-        titulo: "Camiseta 08",
+        titulo: "Camiseta ecofriendly LYT",
         imagen: "./img/camisetas/08.jpg",
         categoria: {
             nombre: "Camisetas",
@@ -135,7 +135,7 @@ export const productos = [
     // Pantalones
     {
         id: "pantalon-01",
-        titulo: "Pantalón 01",
+        titulo: "Pantalón con lino orgánico de Mara Hoffman",
         imagen: "./img/pantalones/01.jpg",
         categoria: {
             nombre: "Pantalones",
@@ -145,7 +145,7 @@ export const productos = [
     },
     {
         id: "pantalon-02",
-        titulo: "Pantalón 02",
+        titulo: "Pantalón de algodón orgánico de Nudie Jeans",
         imagen: "./img/pantalones/02.jpg",
         categoria: {
             nombre: "Pantalones",
@@ -155,7 +155,7 @@ export const productos = [
     },
     {
         id: "pantalon-03",
-        titulo: "Pantalón 03",
+        titulo: "Pantalón de lino orgánico de Reformation",
         imagen: "./img/pantalones/03.jpg",
         categoria: {
             nombre: "Pantalones",
@@ -165,7 +165,7 @@ export const productos = [
     },
     {
         id: "pantalon-04",
-        titulo: "Pantalón 04",
+        titulo: "Pantalón de seda orgánica de Maiyet",
         imagen: "./img/pantalones/04.jpg",
         categoria: {
             nombre: "Pantalones",
@@ -175,7 +175,7 @@ export const productos = [
     },
     {
         id: "pantalon-05",
-        titulo: "Pantalón 05",
+        titulo: "Pantalón de cachemir reciclado",
         imagen: "./img/pantalones/05.jpg",
         categoria: {
             nombre: "Pantalones",
