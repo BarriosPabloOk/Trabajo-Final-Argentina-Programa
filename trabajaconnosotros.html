@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Patua+One&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap"
       rel="stylesheet"
@@ -45,6 +51,7 @@
   <body >
     <nav >
       <ul>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="subastas.html">Subastas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="ventaspormayor.html">Ventas por mayor</a></li>
@@ -55,31 +62,52 @@
 
 
   <body>
-    <h1 style="margin: 40px 30px 30px 100px" >Sumate a nuestro Staff</h1>
+    <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Trabajá con nosotros</h1>
+    <div class="col-md-2 col-xs-2" style="display: inline-block"></div>
+    <div class="col-md-8"style="display: inline-block">
+
+
+    <p style="padding: 70px 70px 70px 70px; text-align: justify; background-color: rgb(181, 250, 227); border: 3px solid black; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
+
+      ¡Hola! En nuestra empresa de comercio electrónico estamos necesitando sumar personas de todas las trayectorias posibles. Si crees que tenés las aptitudes necesarias, estás en el lugar correcto. <br><br>
+      Llená el formulario que aparece en pantalla a continuación y nos comunicaremos con vos!<br><br>
+
+      
+    
+    </p></div><br><br>
+
+
+<div class="col-md-2 col-xs-2" style="display: inline-block"></div>
+    <div class="col-md-8"style="display: inline-block">
+<div style="padding: 70px 70px 70px 70px; text-align: justify; background-color: rgb(181, 250, 227); border: 3px solid black; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
+  <h1 style="font-family: 'Patua One', cursive; text-align: center; " >Formulario de solicitud de vacante</h1>
+  <form action="procesar-reclamo.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" size="30" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" size="30" required>
+    <br>
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" size="30">
+    <br>
+    <label for="experiencia">Experiencia Laboral Previa:</label>
+    <input type="text" id="orden" name="orden" size="30" required>
+    <br>
+    <label for="cargo">Tareas para las que me postulo:</label>
+    <textarea id="motivo" name="motivo" rows="5" cols="30" required></textarea>
+    <br>
+    <input type="submit" value="Enviar Postulación">
+  </form>
 
 
 
-<div class = "col-md-9">
-    <form action="procesar-reclamo.php" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" size="30" required>
-      <br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" size="30" required>
-      <br>
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono" size="30">
-      <br>
-      <label for="experiencia">Experiencia Laboral Previa:</label>
-      <input type="text" id="orden" name="orden" size="30" required>
-      <br>
-      <label for="cargo">Tareas para las que me postulo:</label>
-      <textarea id="motivo" name="motivo" rows="5" cols="30" required></textarea>
-      <br>
-      <input type="submit" value="Enviar Curriculum">
-    </form>
+  </div></div><br><br>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
 
-  </div>
+    
+  </div><br><br>
     <footer>
         <ul>
           <li><a href="trabajaconnosotros.html">Trabajá con nosotros</a></li>
