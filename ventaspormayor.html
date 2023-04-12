@@ -62,98 +62,140 @@
 
   <body>
 
+
     <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Artículos en Venta por Mayor</h1>
 
+<div id="miAlerta" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
+        <p class="mensaje">Gracias por su compra!</p>
+      </div>
+    </div>
+    
+    <style>
+      
+      .modal {
+        display: none; 
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+      }
+    
+      .modal-contenido {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+      }
+    
+      .cerrar {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: -10px;
+      }
+    
+      .cerrar:hover,
+      .cerrar:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    
+      .mensaje {
+        font-size: 36px;
+      }
+    </style>
+    
+    <script>
+      function mostrarAlerta() {
+        document.getElementById("miAlerta").style.display = "block";
+      }
+    
+      function cerrarAlerta() {
+        document.getElementById("miAlerta").style.display = "none";
+      }
+    </script>
 
 
 
 
-
-
-
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+    <div class="container ">
+         <div class="row">
+        <div class="col-md-3 ">
+          <div class="card"style="height:340px; width: 250px; margin: 5px">
+            <img src="https://cdn.shopify.com/s/files/1/0034/5459/9217/products/product-image-468690540_360x.jpg?v=1571720317" class="card-img-top" alt="Producto 1" style="width: 250px;
+            height: 240px; object-fit: cover"
+          >
             <div class="card-body">
-              <h5 class="card-title">Producto 1</h5>
-              <button type="button" class="btn btn-primary">Comprar</button>
+              <h5 class="card-title">Campero XS Stalsbury</h5>
+              <button type="button" class="btn btn-primary" onclick="mostrarAlerta()"  >Comprar</button>
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="producto2.jpg" class="card-img-top" alt="Producto 2">
+        <div class="col-md-3">
+          <div class="card" style="height:340px; width: 250px; margin: 5px">
+            <img src="https://d368r8jqz0fwvm.cloudfront.net/33151-product_lg/campera-de-hombre-crom.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
+            height: 240px; object-fit: ccover"
+          >
             <div class="card-body">
-              <h5 class="card-title">Producto 2</h5>
-              <button type="button" class="btn btn-primary">Comprar</button>
+              <h5 class="card-title">Campera M Heisling</h5>
+              <button type="button" class="btn btn-primary"onclick="mostrarAlerta()" >Comprar</button>
             </div>
           </div>
-        </div><div class="container mt-4">
-          <div class="row">
-            <div class="col-md-3 mb-4">
-              <div class="card">
-                <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
-                <div class="card-body">
-                  <h5 class="card-title">Producto 1</h5>
-                  <button type="button" class="btn btn-primary">Comprar</button>
-                </div>
-              </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="height:340px; width: 250px; margin: 5px">
+            <img src="https://d368r8jqz0fwvm.cloudfront.net/29596-product_lg/campera-de-hombre-ivor.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
+            height: 240px; object-fit: cover"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Campero Cheirhold</h5>
+              <button type="button" class="btn btn-primary"  onclick="mostrarAlerta()" >Comprar</button>
             </div>
-            <div class="col-md-3 mb-4">
-              <div class="card">
-                <img src="producto2.jpg" class="card-img-top" alt="Producto 2">
-                <div class="card-body">
-                  <h5 class="card-title">Producto 2</h5>
-                  <button type="button" class="btn btn-primary">Comprar</button>
-                </div>
-              </div>
-            </div><div class="container mt-4">
-              <div class="row">
-                <div class="col-md-3 mb-4">
-                  <div class="card">
-                    <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Producto 1</h5>
-                      <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                  <div class="card">
-                    <img src="producto2.jpg" class="card-img-top" alt="Producto 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Producto 2</h5>
-                      <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                  </div>
-                </div><div class="container mt-4">
-                  <div class="row">
-                    <div class="col-md-3 mb-4">
-                      <div class="card">
-                        <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
-                        <div class="card-body">
-                          <h5 class="card-title">Producto 1</h5>
-                          <button type="button" class="btn btn-primary">Comprar</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                      <div class="card">
-                        <img src="producto2.jpg" class="card-img-top" alt="Producto 2">
-                        <div class="card-body">
-                          <h5 class="card-title">Producto 2</h5>
-                          <button type="button" class="btn btn-primary">Comprar</button>
-                        </div>
-                      </div>
-                    </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="height:340px; width: 250px; margin: 5px">
+            <img src="https://www.kvnstatic.com/foto-prod/M58A1035/M58A1035_4-Campera-Belik-Canguro-Liso-Frisa-Mujer.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
+            height: 240px; object-fit: cover"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Campera FD Rembert</h5>
+              <button type="button" class="btn btn-primary"onclick="mostrarAlerta()" >Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="height:340px; width: 250px; margin: 20px 5px">
+            <img src="https://www.vandalia.com.ar/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/7/8/7876_campera_con_capucha_negra_2_.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
+            height: 240px; object-fit: cover"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Campera Pering</h5>
+              <button type="button" class="btn btn-primary"onclick="mostrarAlerta()" >Comprar</button>
+            </div>
+          </div>
+        </div>
+        
+                  
+                  
                   </div></div></div></div></div></div></div>
             
           
             
             
     
+
 
 
     </div>

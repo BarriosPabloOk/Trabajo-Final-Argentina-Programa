@@ -14,7 +14,9 @@ function loadProducts() {
         div.innerHTML = `
             <img class=" img-fluid" src="${product.imagen}" alt="${product.titulo}" />
             <h4>${product.titulo}</h4>
-            <button id = '${product.id}-button'>Comprar</button>
+            <button onclick="mostrarAlerta()('Gracias por su compra!')" id = '${product.id}-button'>Comprar</button>
+
+            
         `
         fragmentProducts.appendChild(div)
     })
@@ -37,3 +39,7 @@ function getButtonsProducst() {
 loadProducts()
 getButtonsProducst()
 console.log(productos.length)
+
+function mostrarMensaje() {
+    document.getElementById("mensaje").innerHTML = "¡Gracias por su compra!";
+  }

@@ -2,15 +2,32 @@ body {
   background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
   font-family: "Phudu", cursive;
   font-weight: bold;
+  
 
+}
+header{
+  display: inline-block;
+	width: 100%;
+	margin-top: 0px;
+  background-color: #ffffff;
+  background-image: url(logo/fondoBanner.jpg);
+}
+
+.imgBanner{
+  padding: 5px 15px;
 }
 nav {
   background: linear-gradient(to right, #45a247, #283c86);
+  top: 0;
+  margin: 0;
+  position: sticky;
 
 }
 nav ul {
-  margin: 0;
-}
+    margin: 0;
+    text-align: center; 
+  }
+
 
 nav ul li {
   display: inline;
@@ -18,11 +35,18 @@ nav ul li {
 }
 
 nav ul li a {
+  text-decoration: none;
   color: #ddd;
+  margin: 40px;
 }
 
 nav li a:hover {
-  background-color: #ddd;
+  color: white;
+	text-decoration: none;
+}
+
+nav li a:hover{
+	text-shadow: 0px 0px 9px #fff; /*crea luminosidad en el texto cuando pases el mouse por arriba*/
 }
 
 #limited-offers {
@@ -70,16 +94,32 @@ button:hover {
 
 footer {
   background: linear-gradient(to right, #45a247, #283c86);
-}
-
-footer ul {
+  top: 0;
   margin: 0;
+  
 }
+footer ul {
+    margin: 0;
+    text-align: center; 
+  }
+
 
 footer ul li {
   display: inline;
-  margin: 15px;
+  margin-inline: 5px;
 }
+
 footer ul li a {
+  text-decoration: none;
   color: #ddd;
+  margin: 40px;
+}
+
+footer li a:hover {
+  color: white;
+	text-decoration: none;
+}
+
+footer li a:hover{
+	text-shadow: 0px 0px 9px #fff; /*crea luminosidad en el texto cuando pases el mouse por arriba*/
 }
