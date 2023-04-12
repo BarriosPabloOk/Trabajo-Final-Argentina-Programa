@@ -9,7 +9,7 @@ function loadProducts() {
     const fragmentProducts = document.createDocumentFragment()
     productos.map((product) => {
         const div = document.createElement('div')
-        div.id = product.id
+        div.id = "productos"
         div.className = "col-md-3 col-sm-3  product"
         div.innerHTML = `
             <img class=" img-fluid" src="${product.imagen}" alt="${product.titulo}" />
