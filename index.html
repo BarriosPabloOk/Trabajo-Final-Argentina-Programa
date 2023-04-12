@@ -117,6 +117,11 @@
       <div class="row">
         <div class="col-md-3 ">
           
+          <!------------------------------BUSCADOR--------------------------->
+          <div> 
+            <input type="text" class="form-control pull-right" id="buscar" placeholder="B u s c a r . . . " style="margin-bottom: 5px;">
+          </div>
+           <!-----------------------------BUSCADOR--------------------------->
           
           <div class="ayuda_h1" style="font-family: 'Phudu', cursive
           ; margin-bottom: 5px; text-align: center; background-color: rgb(168, 252, 224); left: 0%; border: 3px solid black; " >Ofertas por tiempo limitado
@@ -480,3 +485,20 @@
 
   </body>
 </html>
+  
+  <script>
+  document.addEventListener("keyup", e=>{
+
+  if (e.target.matches("#buscar")){
+
+      if (e.key ==="Escape")e.target.value = ""
+
+      document.querySelectorAll("#productos").forEach(productos =>{
+
+          productos.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ?productos.classList.remove("filtro")
+            :productos.classList.add("filtro")
+      })
+  }
+})
+</script>
