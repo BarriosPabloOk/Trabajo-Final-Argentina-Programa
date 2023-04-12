@@ -6,6 +6,8 @@ finalidad de agregarlo a sus portfolios personales.
 ## Enunciado
 Desarrollar una landing page para una organización/emprendimiento/empresa
 (rubro/actividad a elección del estudiante).
+## Link de visualización
+https://barriospablook.github.io/Trabajo-Final-Argentina-Programa/
 
 ## Integrantes:
 - Adolph Valery
@@ -13,5 +15,4 @@ Desarrollar una landing page para una organización/emprendimiento/empresa
 - German Pelaez Moll
 - Pablo Barrios
 
-## Link de visualización
-https://barriospablook.github.io/Trabajo-Final-Argentina-Programa/
+
