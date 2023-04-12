@@ -29,7 +29,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-   
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      
+      label {
+        margin: 0px 30px 0px 100px;
+      }
+      
+      input, textarea {
+        margin: 0px 30px 30px 100px;
+        width: 600px;
+      }
+      
+     
+    </style>
+
   </head>
   <body >
     <nav style="z-index: 100";>
@@ -49,8 +67,13 @@
 
 
     <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Productos en Subasta</h1>
-
-
+    
+    
+    <!--------------------------------------BUSCADOR---------------------------------------->
+    <div class="buscador"> 
+      <input class="buscador2" type="text"  id="buscar" placeholder="B u s c a r . . . ">
+    </div>
+    <!--------------------------------------BUSCADOR---------------------------------------->
 
 <div id="miAlerta" class="modal">
       <div class="modal-contenido">
@@ -115,44 +138,42 @@
 
 
 
-
-
     <div class="container ">
          <div class="row">
-        <div class="col-md-3 ">
+        <div class="col-md-3 " id="productos">
           <div class="card"style="height:340px; width: 250px; margin: 5px">
             <img src="https://cdn.shopify.com/s/files/1/0034/5459/9217/products/product-image-468690540_360x.jpg?v=1571720317" class="card-img-top" alt="Producto 1" style="width: 250px;
             height: 240px; object-fit: cover"
           >
-            <div class="card-body">
+            <div class="card-body" >
               <h5 class="card-title">Campero XS Stalsbury</h5>
               <button type="button" class="btn btn-primary" onclick="mostrarAlerta()">Comprar</button>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" id="productos">
           <div class="card" style="height:340px; width: 250px; margin: 5px">
             <img src="https://d368r8jqz0fwvm.cloudfront.net/33151-product_lg/campera-de-hombre-crom.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
             height: 240px; object-fit: ccover"
           >
-            <div class="card-body">
+            <div class="card-body" >
               <h5 class="card-title">Campera M Heisling</h5>
               <button type="button" class="btn btn-primary" onclick="mostrarAlerta()">Comprar</button>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" id="productos">
           <div class="card" style="height:340px; width: 250px; margin: 5px">
             <img src="https://d368r8jqz0fwvm.cloudfront.net/29596-product_lg/campera-de-hombre-ivor.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
             height: 240px; object-fit: cover"
           >
-            <div class="card-body">
+            <div class="card-body" >
               <h5 class="card-title">Campero Cheirhold</h5>
               <button type="button" class="btn btn-primary" onclick="mostrarAlerta()" >Comprar</button>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" id="productos">
           <div class="card" style="height:340px; width: 250px; margin: 5px">
             <img src="https://www.kvnstatic.com/foto-prod/M58A1035/M58A1035_4-Campera-Belik-Canguro-Liso-Frisa-Mujer.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
             height: 240px; object-fit: cover"
@@ -163,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" id="productos">
           <div class="card" style="height:340px; width: 250px; margin: 20px 5px">
             <img src="https://www.vandalia.com.ar/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/7/8/7876_campera_con_capucha_negra_2_.jpg" class="card-img-top" alt="Producto 1" style="width: 250px;
             height: 240px; object-fit: cover"
@@ -214,3 +235,21 @@
   </body>
 </html>
 
+<!-------------------------------------- JS BUSCADOR ---------------------------------------->
+<script>
+  document.addEventListener("keyup", e=>{
+
+  if (e.target.matches("#buscar")){
+
+      if (e.key ==="Escape")e.target.value = ""
+
+      document.querySelectorAll("#productos").forEach(productos =>{
+
+          productos.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ?productos.classList.remove("filtro")
+            :productos.classList.add("filtro")
+      })
+  }
+})
+</script>
+<!-------------------------------------- JS BUSCADOR ---------------------------------------->
