@@ -44,9 +44,15 @@
         margin: 0px 30px 30px 100px;
         width: 600px;
       }
+
+      span {
+        color: red;
+      }
       
      
     </style>
+
+
   </head>
   <body >
     <nav >
@@ -60,7 +66,7 @@
       </ul>
     </nav>
 
-  <body>
+
     <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Reclamos</h1>
     <div class="col-md-2 col-xs-2" style="display: inline-block"></div>
     <div class="col-md-8"style="display: inline-block">
@@ -78,7 +84,7 @@ Por favor, complete el siguiente formulario de reclamo y a la brevedad uno de nu
 
 <div style="padding: 70px 70px 70px 70px; text-align: justify; background-color: rgb(181, 250, 227); border: 3px solid black; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
 <h1 style="font-family: 'Patua One', cursive; text-align: center; " >Formulario</h1>
-<form action="procesar-reclamo.php" method="post">
+<!-- <form action="procesar-reclamo.php" method="post">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" size="30" required>
     <br>
@@ -95,7 +101,35 @@ Por favor, complete el siguiente formulario de reclamo y a la brevedad uno de nu
     <textarea id="motivo" name="motivo" rows="5" cols="30" required></textarea>
     <br>
     <input type="submit" value="Enviar Reclamo">
-  </form>
+  </form> -->
+
+  <form
+  id="demand-form"
+  name="demand-form"
+  class="container-fluid"
+
+>
+  <label >Nombre: <span id="first-name-validation"></span></label>
+  <input id="first-name" name="first-name" />
+  <br />
+  <label>Email: <span id="email-validation"></span></label>
+  <input id="email" name="email" />
+  <br />
+  <label >Teléfono: <span id="phone-validation"></span></label>
+  <input id="phone" name="phone" />
+  <br />
+  <label >Número de orden: <span id="order-validation"></span></label>
+  <input id="order" name="order" />
+  <br />
+  <label for="reason">Motivo del Reclamo:  <span id="reason-validation"></span></label>
+  <textarea id="reason" name="reason" rows="5" cols="30" ></textarea>
+  <br>
+  <input
+    type="submit"
+    name="submit"
+    value="Enviar consulta"
+    class="btn btn-primary"
+  />
 
   </div></div><br><br>
   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
@@ -112,10 +146,10 @@ Por favor, complete el siguiente formulario de reclamo y a la brevedad uno de nu
           <li><a href="informacionsobreseguros.html">Información sobre seguros</a></li>
         </ul>
       </footer>
-      <script type='module' src="main.js"></script>
-      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    </body>
-  </html>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js" integrity="sha512-8GLIg5ayTvD6F9ML/cSRMD19nHqaLPWxISikfc5hsMJyX7Pm+IIbHlhBDY2slGisYLBqiVNVll+71CYDD5RBqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./scripts/demand-form.js"></script>
+
   </body>
 </html>
 

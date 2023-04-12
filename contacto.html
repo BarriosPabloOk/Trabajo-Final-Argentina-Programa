@@ -11,16 +11,22 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Patua+One&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap"
       rel="stylesheet"
@@ -30,25 +36,29 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
     <style>
+      nav {
+        z-index: 900;
+      }
       form {
         display: flex;
         flex-direction: column;
-        
       }
-      
+
       label {
         margin: 0px 30px 0px 100px;
       }
-      
-      input, textarea {
+
+      input,
+      textarea {
         margin: 0px 30px 30px 100px;
         width: 600px;
       }
-      
-     
+      span {
+        color: red;
+      }
     </style>
   </head>
-  <body >
+  <body>
     <nav >
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -60,9 +70,7 @@
       </ul>
     </nav>
 
-
-  <body>
-    <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Contacto</h1>
+        <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Contacto</h1>
     <div class="col-md-2 col-xs-2" style="display: inline-block"></div>
     <div class="col-md-8"style="display: inline-block">
 
@@ -71,52 +79,80 @@
 
       ¡Hola! En nuestra empresa de comercio electrónico valoramos mucho tu opinión y estamos siempre dispuestos a escucharte. Si necesitas contactarnos, estás en el lugar correcto. <br><br>
 
-      ¿Necesitas ayuda con tu pedido? ¿Tienes alguna duda acerca de uno de nuestros productos? Estamos aquí para ayudarte en todo lo que necesites. ¡Contactanos a través del formulario que se lee a continuación!<br><br>
+      ¿Necesitas ayuda con tu pedido? ¿Tienes alguna duda acerca de uno de nuestros productos? Estamos aquí para ayudarte en todo lo que necesites. <br/> <br/>¡Podés contactarnos a travéz de los siguientes canales o también a través del formulario que se lee a continuación!<br><br>
       
     
-    </p></div><br><br>
+    </p>
 
-
-<div class="col-md-2 col-xs-2" style="display: inline-block"></div>
-    <div class="col-md-8"style="display: inline-block">
-<div style="padding: 70px 70px 70px 70px; text-align: justify; background-color: rgb(181, 250, 227); border: 3px solid black; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
-  <h1 style="font-family: 'Patua One', cursive; text-align: center; " >Formulario</h1>
-    <form id = "myForm" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" size="30" >
-      <br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" size="30" >
-      <br>
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono" size="30">
-      <br>
-      <label for="experiencia">Duda o Consulta</label>
-      <input type="text" id="orden" name="orden" size="30" >
-      <br>
-      <input type="submit" value="Enviar consulta">
-    </form>
-
-  </div></div><br><br>
-  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
-
-    
+    <div id="response" class="container-fluid"></div>
+  
   </div><br><br>
-    <footer>
-        <ul>
-          <li><a href="trabajaconnosotros.html">Trabajá con nosotros</a></li>
-          <li><a href="terminosycondiciones.html">Términos y condiciones</a></li>
-          <li><a href="ayuda.html">Ayuda</a></li>
-          <li><a href="defensadelconsumidor.html">Defensa del consumidor</a></li>
-          <li><a href="informacionsobreseguros.html">Información sobre seguros</a></li>
-        </ul>
-      </footer>
-      <script type='module' src="./scripts/contact.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
-    </body>
-  </html>
+    <div class="col-md-2 col-xs-2" style="display: inline-block"></div>
+    <div class="col-md-8" style="display: inline-block">
+      <div
+        style="
+          padding: 70px 70px 70px 70px;
+          text-align: justify;
+          background-color: rgb(181, 250, 227);
+          border: 3px solid black;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 5000;
+        "
+      >
+        <h1 style="font-family: 'Patua One', cursive; text-align: center">
+          Formulario
+        </h1>
+
+        <form
+          id="contact-form"
+          name="contact-form"
+          class="container-fluid"
+
+        >
+          <label >Nombre: <span id="first-name-validation"></span></label>
+          <input id="first-name" name="first-name" />
+          <br />
+          <label>Email: <span id="email-validation"></span></label>
+          <input id="email" name="email" />
+          <br />
+          <label >Teléfono: <span id="phone-validation"></span></label>
+          <input id="phone" name="phone" />
+          <br />
+          <label >Duda o Consulta: <span id="experience-validation"></span></label>
+          <input id="experience" name="experience" />
+          <br />
+          <input
+            type="submit"
+            name="submit"
+            value="Enviar consulta"
+            class="btn btn-primary"
+          />
+        </form>
+
+        
+      </div>
+    </div>
+    <br /><br />
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+    </div>
+    <br /><br />
+    <footer>
+      <ul>
+        <li><a href="trabajaconnosotros.html">Trabajá con nosotros</a></li>
+        <li><a href="terminosycondiciones.html">Términos y condiciones</a></li>
+        <li><a href="ayuda.html">Ayuda</a></li>
+        <li><a href="defensadelconsumidor.html">Defensa del consumidor</a></li>
+        <li>
+          <a href="informacionsobreseguros.html">Información sobre seguros</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js" integrity="sha512-8GLIg5ayTvD6F9ML/cSRMD19nHqaLPWxISikfc5hsMJyX7Pm+IIbHlhBDY2slGisYLBqiVNVll+71CYDD5RBqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/contact-form.js"></script>
+    <script src="./scripts/users-api.js"></script>
+    
   </body>
 </html>
-
