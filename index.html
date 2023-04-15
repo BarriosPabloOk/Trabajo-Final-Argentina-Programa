@@ -3,58 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Online</title>
+    <title>Panda Indumentaria</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<script src="https://kit.fontawesome.com/28e20975f1.js" crossorigin="anonymous"></script>
   </head>
   <body >
-      <nav >
-      <ul>
+    <nav >
+      <!---------------------NAV para DESKTOP------------------->
+      <ul class="navul">
         <li><a href="subastas.html">Subastas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="ventaspormayor.html">Ventas por mayor</a></li>
         <li><a href="reclamos.html">Reclamos</a></li>
         <li><a href="quienessomos.html">Quiénes somos</a></li>
       </ul>
+      <!---------------------NAV para pantallas pequeñas--------------------------->
+      <ul class="nav__ul">
+        <div class="nav__cajaMenu">
+          <div class="nav__menu">MENU<i class="fa-sharp fa-solid fa-bars"></i></div>
+        </div>
+        <li class="cajaEnlases__Nav">
+          <a class="enlases__Nav" href="subastas.html">Subastas</a>
+          <a class="enlases__Nav" href="contacto.html">Contacto</a>
+          <a class="enlases__Nav" href="ventaspormayor.html">Ventas por mayor</a>
+          <a class="enlases__Nav" href="reclamos.html">Reclamos</a>
+          <a class="enlases__Nav" href="quienessomos.html">Quiénes somos</a>
+        </li>
+      </ul>
     </nav>
-     <header style="margin: 5px;">
-      <div class="imgBanner">
+    <!------------------------------BANNER--------------------------->
+    <header>
+      <div class="imgBanner" >
         <img src="logo/pandaLogo.png">
       </div>
     </header>
-
-
-    
-    <div id="miAlerta" class="modal">
-      <div class="modal-contenido">
+    <!-----------------------POP UP GRACIAS POR SU COMPRA------------------>    
+    <div id="graciasPorSuCompra" class="oscuro">
+      <div class="cartel">
         <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
         <p class="mensaje">Gracias por su compra!</p>
       </div>
-    </div>
-    
-    <style>
-      
-      .modal {
+    </div>    
+    <style>      
+      .oscuro {
         display: none; 
         position: fixed;
         z-index: 1;
@@ -65,15 +71,16 @@
         overflow: auto;
         background-color: rgba(0,0,0,0.4);
       }
-    
-      .modal-contenido {
-        background-color: #fefefe;
+
+      .cartel {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: 15% auto;
         padding: 20px;
-        border: 1px solid #888;
+        border: 3px solid rgb(12, 10, 10);
         width: 80%;
         max-width: 500px;
         text-align: center;
+        background-color: rgb(168, 252, 224);
       }
     
       .cerrar {
@@ -94,249 +101,54 @@
       .mensaje {
         font-size: 36px;
       }
-    </style>
-    
+    </style>    
     <script>
       function mostrarAlerta() {
-        document.getElementById("miAlerta").style.display = "block";
+        document.getElementById("graciasPorSuCompra").style.display = "block";
       }
     
       function cerrarAlerta() {
-        document.getElementById("miAlerta").style.display = "none";
+        document.getElementById("graciasPorSuCompra").style.display = "none";
       }
     </script>
-
-
  <!------------------------------BUSCADOR--------------------------->
           <div style="margin: 10px; border: 3px solid black; padding: 7px 7px 2px 7px; background-color: rgb(168, 252, 224);"> 
             <input type="text" class="form-control pull-right" id="buscar" placeholder="B u s c a r . . . " style="margin-bottom: 5px;"></div>
-           <!-----------------------------BUSCADOR--------------------------->
-
-
-
-
+ <!-----------------------------CUERPO--------------------------->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3 ">
-
-
-         
-
+<!-------------------COLUMNA DE LA IZQUIERDA-------------------------->
+        <div class="col-md-3 ">    
           <div class="ayuda_h1" style="font-family: 'Phudu', cursive
-          ; margin-bottom: 5px; text-align: center; background-color: rgb(168, 252, 224); left: 0%; border: 3px solid black; " >Ofertas por tiempo limitado
-          
+          ; margin-bottom: 5px; text-align: center; background-color: rgb(168, 252, 224); left: 0%; border: 3px solid black; " >Ofertas por tiempo limitado        
         </div>
-
-            <div class="ayuda_h1" style="font-family: 'Phudu', cursive
-            ; margin:0; text-align: left; background-color: rgb(168, 252, 224); left: 0%; border: 3px solid black; overflow-y: scroll; height: 500px; " >
-            
-            
-            
-
-
+          <div class="ayuda_h1" style="font-family: 'Phudu', cursive
+            ; margin:0; text-align: left; background-color: rgb(168, 252, 224); left: 0%; border: 3px solid black; overflow-y: scroll; height: 500px; " >  
           <ul >
-            <li id="productos">Zapatos Negros de Oficina Butelli</li> <button id="productos" onclick="mostrarAlerta()">Comprar</button>
-             
-           
-
-           <div id="beto" style="display: none; color: black; background-color: red;"> Compra exitosa!
-
-
-           </div>
-                    
-
-
-
-
-
-            <li id="productos" >Disfraz de Halloween de Fantasma</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto2" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-
-
-            
+            <li id="productos">Zapatos Negros de Oficina Butelli</li> <button id="productos" onclick="mostrarAlerta()">Comprar</button>  
+            <li id="productos" >Disfraz de Halloween de Fantasma</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
             <li id="productos"> Corbatas importadas HTY </li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto3" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
             <li id="productos">Versace - Sombreros de colección </li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto4" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Nike - Medias clásicas</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto5" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
+            <li id="productos">Nike - Medias clásicas</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
             <li id="productos">NIke - Conjunto deportivo - XL</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto6" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Adidas - Conjunto deportivo - M </li> <button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto7" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
+            <li id="productos">Adidas - Conjunto deportivo - M </li> <button id="productos" onclick="mostrarAlerta()">Comprar</button>   
             <li id="productos">Conjunto deportivo Puma XXS </li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto8" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Conjunto deportivo Topper SLIM FIT </li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto9" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
+            <li id="productos">Conjunto deportivo Topper SLIM FIT </li><button id="productos" onclick="mostrarAlerta()">Comprar</button> 
             <li id="productos">Camiseta del Barcelona</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto10" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos" >Stella McCartney - Falda de seda sostenible</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto11" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos"> Eileen Fisher - Pantalones de lino orgánico</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto12" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Patagonia - Chaqueta de plumón reciclado</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto13" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Veja - Zapatillas de cuero sostenible</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto14" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Reformation - Vestido de algodón orgánico</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto15" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
+            <li id="productos" >Stella McCartney - Falda de seda sostenible</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>  
+            <li id="productos"> Eileen Fisher - Pantalones de lino orgánico</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
+            <li id="productos">Patagonia - Chaqueta de plumón reciclado</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
+            <li id="productos">Veja - Zapatillas de cuero sostenible</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
+            <li id="productos">Reformation - Vestido de algodón orgánico</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
             <li id="productos">Mara Hoffman - Traje de baño hecho con Econyl</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto16" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Nudie Jeans</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto17" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Everlane - Sudadera de algodón reciclado</li><button  id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto18" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
+            <li id="productos">Nudie Jeans</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
+            <li id="productos">Everlane - Sudadera de algodón reciclado</li><button  id="productos" onclick="mostrarAlerta()">Comprar</button>   
             <li id="productos">Amour Vert - Blusa de seda </li><button  id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto19" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Indigenous - Jersey de alpaca orgánica</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto20" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">Boyish Jeans - Shorts de mezclilla reciclados</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto21" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos">G-Star RAW - Chaqueta </li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto22" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-            <li id="productos" >Outerknown - Pantalones cortos</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto23" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
+            <li id="productos">Indigenous - Jersey de alpaca orgánica</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>  
+            <li id="productos">Boyish Jeans - Shorts de mezclilla reciclados</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
+            <li id="productos">G-Star RAW - Chaqueta </li><button id="productos" onclick="mostrarAlerta()">Comprar</button>  
+            <li id="productos" >Outerknown - Pantalones cortos</li><button id="productos" onclick="mostrarAlerta()">Comprar</button>   
             <li id="productos">Organic Basics - Calcetines de algodón </li><button id="productos" onclick="mostrarAlerta()">Comprar</button>    
-             
-           
-
-            <div id="beto24" style="display: none; color: black; background-color: red;"> Compra exitosa!
- 
- 
-            </div>
-     
 
         </div> </div>
 
@@ -351,7 +163,7 @@
       </div>
     </div>
     <footer>
-      <ul>
+      <ul >
         <li><a href="trabajaconnosotros.html">Trabajá con nosotros</a></li>
         <li><a href="terminosycondiciones.html">Términos y condiciones</a></li>
         <li><a href="ayuda.html">Ayuda</a></li>
@@ -360,126 +172,7 @@
       </ul>
     </footer>
     <script type='module' src="main.js"></script>
-    <script>
-      function mostrarMensaje() {
-        document.getElementById("beto").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-      }
-      </script>
-      <script>
-        function mostrarMensaje2() {
-          document.getElementById("beto2").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-        }
-        </script>
-        <script>
-          function mostrarMensaje3() {
-            document.getElementById("beto3").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-          }
-          </script>
-          <script>
-            function mostrarMensaje4() {
-              document.getElementById("beto4").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-            }
-            </script>
-            <script>
-              function mostrarMensaje5() {
-                document.getElementById("beto5").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-              }
-              </script>
-              <script>
-                function mostrarMensaje6() {
-                  document.getElementById("beto6").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                }
-                </script>
-                <script>
-                  function mostrarMensaje7() {
-                    document.getElementById("beto7").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                  }
-                  </script>
-                  <script>
-                    function mostrarMensaje8() {
-                      document.getElementById("beto8").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                    }
-                    </script>
-                    <script>
-                      function mostrarMensaje9() {
-                        document.getElementById("beto9").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                      }
-                      </script>
-                      <script>
-                        function mostrarMensaje10() {
-                          document.getElementById("beto10").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                        }
-                        </script>
-                        <script>
-                          function mostrarMensaje11() {
-                            document.getElementById("beto11").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                          }
-                          </script>
-                          <script>
-                            function mostrarMensaje12() {
-                              document.getElementById("beto12").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                            }
-                            </script>
-                            <script>
-                              function mostrarMensaje13() {
-                                document.getElementById("beto13").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                              }
-                              </script>
-                              <script>
-                                function mostrarMensaje14() {
-                                  document.getElementById("beto14").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                }
-                                </script>
-                                <script>
-                                  function mostrarMensaje15() {
-                                    document.getElementById("beto15").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                  }
-                                  </script>
-                                  <script>
-                                    function mostrarMensaje16() {
-                                      document.getElementById("beto16").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                    }
-                                    </script>
-                                    <script>
-                                      function mostrarMensaje17() {
-                                        document.getElementById("beto17").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                      }
-                                      </script>
-                                      <script>
-                                        function mostrarMensaje18() {
-                                          document.getElementById("beto18").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                        }
-                                        </script>
-                                        <script>
-                                          function mostrarMensaje19() {
-                                            document.getElementById("beto19").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                          }
-                                          </script>
-                                          <script>
-                                            function mostrarMensaje20() {
-                                              document.getElementById("beto20").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                            }
-                                            </script>
-                                            <script>
-                                              function mostrarMensaje21() {
-                                                document.getElementById("beto21").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                              }
-                                              </script>
-                                              <script>
-                                                function mostrarMensaje22() {
-                                                  document.getElementById("beto22").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                                }
-                                                </script>
-                                                <script>
-                                                  function mostrarMensaje23() {
-                                                    document.getElementById("beto23").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                                  }
-                                                  </script>
-                                                  <script>
-                                                    function mostrarMensaje24() {
-                                                      document.getElementById("beto24").setAttribute("style", "color: black; background-color: green; display: inline;"); 
-                                                    }
-                                                    </script>
+    
 
   </body>
 </html>
@@ -502,3 +195,4 @@
 })
 </script>
  
+
