@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Online</title>
+    <title>Panda Indumentaria</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,6 +29,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+    <script src="https://kit.fontawesome.com/28e20975f1.js" crossorigin="anonymous"></script>
     <style>
       form {
         display: flex;
@@ -50,7 +51,7 @@
   </head>
   <body >
     <nav style="z-index: 100";>
-      <ul>
+      <ul class="navul">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="subastas.html">Subastas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -58,8 +59,23 @@
         <li><a href="reclamos.html">Reclamos</a></li>
         <li><a href="quienessomos.html">Quiénes somos</a></li>
       </ul>
+      <!------------------------------MENU RESPONSIVE--------------------------->
+      <ul class="nav__ul">
+        <div class="nav__cajaMenu">
+          <div class="nav__menu">MENU<i class="fa-sharp fa-solid fa-bars"></i></div>
+        </div>
+        <li class="cajaEnlases__Nav">
+          <a class="enlases__Nav" href="index.html">Inicio</a>
+          <a class="enlases__Nav" href="subastas.html">Subastas</a>
+          <a class="enlases__Nav" href="contacto.html">Contacto</a>
+          <a class="enlases__Nav" href="ventaspormayor.html">Ventas por mayor</a>
+          <a class="enlases__Nav" href="reclamos.html">Reclamos</a>
+          <a class="enlases__Nav" href="quienessomos.html">Quiénes somos</a>
+        </li>
+      </ul>
+      <!------------------------------MENU RESPONSIVE--------------------------->
     </nav>
-<header style="margin: 5px;">
+<header>
       <div class="imgBanner">
         <img src="logo/pandaLogo.png">
       </div>
@@ -72,71 +88,70 @@
 
     <!--------------------------------------BUSCADOR---------------------------------------->
     <div class="buscador">
-      <input class="buscador2"  type="text"  id="buscar" placeholder="B u s c a r . . . ">
+      <input class="buscador2"  type="text"  id="buscar" placeholder=" B u s c a r . . . ">
     </div>
     <!--------------------------------------BUSCADOR---------------------------------------->
 
 
-<div id="miAlerta" class="modal">
-      <div class="modal-contenido">
-        <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
-        <p class="mensaje">Gracias por su compra!</p>
-      </div>
-    </div>
-    
-    <style>
-      
-      .modal {
-        display: none; 
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.4);
-      }
-    
-      .modal-contenido {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 500px;
-        text-align: center;
-      }
-    
-      .cerrar {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        margin-top: -10px;
-      }
-    
-      .cerrar:hover,
-      .cerrar:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    
-      .mensaje {
-        font-size: 36px;
-      }
-    </style>
-    
-    <script>
-      function mostrarAlerta() {
-        document.getElementById("miAlerta").style.display = "block";
-      }
-    
-      function cerrarAlerta() {
-        document.getElementById("miAlerta").style.display = "none";
-      }
-    </script>
+<!-----------------------POP UP GRACIAS POR SU COMPRA------------------>    
+<div id="graciasPorSuCompra" class="oscuro">
+  <div class="cartel">
+    <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
+    <p class="mensaje">Gracias por su compra!</p>
+  </div>
+</div>    
+<style>      
+  .oscuro {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .cartel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid rgb(12, 10, 10);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    background-color: rgb(168, 252, 224);
+  }
+
+  .cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+
+  .cerrar:hover,
+  .cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mensaje {
+    font-size: 36px;
+  }
+</style>    
+<script>
+  function mostrarAlerta() {
+    document.getElementById("graciasPorSuCompra").style.display = "block";
+  }
+
+  function cerrarAlerta() {
+    document.getElementById("graciasPorSuCompra").style.display = "none";
+  }
+</script>
 
 
 
