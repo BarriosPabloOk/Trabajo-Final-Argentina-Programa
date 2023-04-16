@@ -10,9 +10,6 @@ Desarrollar una landing page para una organización/emprendimiento/empresa
 https://barriospablook.github.io/Trabajo-Final-Argentina-Programa/
 
 ## Integrantes:
-- Adolph Valery
 - Damian Cabrera
 - German Pelaez Moll
 - Pablo Barrios
-
-
