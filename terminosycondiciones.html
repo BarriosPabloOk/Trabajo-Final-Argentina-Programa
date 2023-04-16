@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Online</title>
+    <title>Panda Indumentaria</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,10 +29,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+    <script src="https://kit.fontawesome.com/28e20975f1.js" crossorigin="anonymous"></script>
   </head>
   <body >
     <nav>
-      <ul>
+      <ul class="navul">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="subastas.html">Subastas</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -40,14 +41,29 @@
         <li><a href="reclamos.html">Reclamos</a></li>
         <li><a href="quienessomos.html">Quiénes somos</a></li>
       </ul>
+      <!------------------------------MENU RESPONSIVE--------------------------->
+      <ul class="nav__ul">
+        <div class="nav__cajaMenu">
+          <div class="nav__menu">MENU<i class="fa-sharp fa-solid fa-bars"></i></div>
+        </div>
+        <li class="cajaEnlases__Nav">
+          <a class="enlases__Nav" href="index.html">Inicio</a>
+          <a class="enlases__Nav" href="subastas.html">Subastas</a>
+          <a class="enlases__Nav" href="contacto.html">Contacto</a>
+          <a class="enlases__Nav" href="ventaspormayor.html">Ventas por mayor</a>
+          <a class="enlases__Nav" href="reclamos.html">Reclamos</a>
+          <a class="enlases__Nav" href="quienessomos.html">Quiénes somos</a>
+        </li>
+      </ul>
+      <!------------------------------MENU RESPONSIVE--------------------------->
     </nav>
-<header style="margin: 5px;">
+<header>
       <div class="imgBanner">
         <img src="logo/pandaLogo.png">
       </div>
     </header>
 
-  <body>
+
     <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Términos y condiciones</h1>
 
     <div class="col-md-2 col-xs-2" style="display: inline-block">
@@ -97,6 +113,5 @@ Estos términos y condiciones se rigen por las leyes del estado o país en el qu
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </body>
   </html>
-  </body>
-</html>
+
 
