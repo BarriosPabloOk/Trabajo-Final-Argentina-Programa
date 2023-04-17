@@ -96,9 +96,9 @@
     <!------------------------------TITULO PRINCIPAL--------------------------->
     <h1 class="ayuda_h1" style="font-family: 'Patua One', cursive; margin:30px 50px 30px 50px; text-align: center; background-color: rgb(168, 252, 224); border: 3px solid black; " >Reclamos</h1>
     <!------------------------------CUERPO--------------------------->
-    <div class="col-md-2 col-xs-2" style="display: inline-block"></div>
-    <div class="col-md-8"style="display: inline-block">
-<div style="padding: 70px 70px 70px 70px; text-align: justify; background-color: rgb(181, 250, 227); border: 3px solid black; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
+    <div class="col-md-2" ></div>
+    <div class="col-md-8">
+<div style="text-align: justify; background-color: rgb(181, 250, 227); font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
 <p>
 Te pedimos disculpas si alguno de nuestros servicios no fue de tu agrado.<br><br>
 Por favor, completá el siguiente formulario de reclamo y a la brevedad uno de nuestros operadores se comunicará con vos.</p></div>
@@ -106,11 +106,11 @@ Por favor, completá el siguiente formulario de reclamo y a la brevedad uno de n
 
 </div><br><br>
 
-<div class="col-md-2 col-xs-2" style="display: inline-block"></div>
-    <div class="col-md-8"style="display: inline-block">
+<div class="col-md-2"></div>
+    <div class="col-md-8">
 
 
-<div style="padding: 70px 70px 70px 70px; text-align: justify; background-color: rgb(181, 250, 227); border: 3px solid black; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
+
 <h1 style="font-family: 'Patua One', cursive; text-align: center; " >Formulario</h1>
 <!----------------------------FORMULARIO CON VALIDACION--------------------------->
   <form
@@ -119,20 +119,20 @@ Por favor, completá el siguiente formulario de reclamo y a la brevedad uno de n
   class="container-fluid"
 
 >
-  <label >Nombre: <span id="first-name-validation"></span></label>
-  <input id="first-name" name="first-name" />
+  <label class="datos">Nombre: <span id="first-name-validation"></span></label>
+  <input  class="rellenar" id="first-name" name="first-name" />
   <br />
-  <label>Email: <span id="email-validation"></span></label>
-  <input id="email" name="email" />
+  <label class="datos">Email: <span id="email-validation"></span></label>
+  <input class="rellenar" id="email" name="email" />
   <br />
-  <label >Teléfono: <span id="phone-validation"></span></label>
-  <input id="phone" name="phone" />
+  <label class="datos">Teléfono: <span id="phone-validation"></span></label>
+  <input class="rellenar" id="phone" name="phone" />
   <br />
-  <label >Número de orden: <span id="order-validation"></span></label>
-  <input id="order" name="order" />
+  <label class="datos">Número de orden: <span id="order-validation"></span></label>
+  <input class="rellenar"  id="order" name="order" />
   <br />
-  <label for="reason">Motivo del Reclamo:  <span id="reason-validation"></span></label>
-  <textarea id="reason" name="reason" rows="5" cols="30" ></textarea>
+  <label class="datos" for="reason">Motivo del Reclamo:  <span id="reason-validation"></span></label>
+  <textarea class="rellenar" id="reason" name="reason" rows="5" cols="30" ></textarea>
   <br>
   <input
     type="submit"
