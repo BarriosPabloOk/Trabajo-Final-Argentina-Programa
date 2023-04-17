@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
   },
   {
     name : 'reason',
-    display: 'Motivo',
+    display: 'Cargo',
     rules: 'required|min_length[50]'
   },
   
