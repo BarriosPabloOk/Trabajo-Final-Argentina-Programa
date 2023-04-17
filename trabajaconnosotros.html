@@ -45,6 +45,9 @@
         margin: 0px 30px 30px 100px;
         width: 600px;
       }
+      span {
+        color: red;
+      }
       
      
     </style>
@@ -101,24 +104,38 @@
     <div class="col-md-8"style="display: inline-block">
 <div style="padding: 70px 70px 70px 70px; text-align: justify; background-color: rgb(181, 250, 227); border: 3px solid black; font-family: Verdana, Geneva, Tahoma, sans-serif ; font-weight: 5000;">
   <h1 style="font-family: 'Patua One', cursive; text-align: center; " >Formulario de solicitud de vacante</h1>
-  <form action="procesar-reclamo.php" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" size="30" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" size="30" required>
-    <br>
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" size="30">
-    <br>
-    <label for="experiencia">Experiencia Laboral Previa:</label>
-    <input type="text" id="orden" name="orden" size="30" required>
-    <br>
-    <label for="cargo">Tareas para las que me postulo:</label>
-    <textarea id="motivo" name="motivo" rows="5" cols="30" required></textarea>
-    <br>
-    <input type="submit" value="Enviar Postulación">
-  </form>
+  
+
+  <form
+  id="work-form"
+  name="work-form"
+  class="container-fluid"
+
+>
+  <label >Nombre: <span id="first-name-validation"></span></label>
+  <input id="first-name" name="first-name" />
+  <br />
+  <label>Email: <span id="email-validation"></span></label>
+  <input id="email" name="email" />
+  <br />
+  <label >Teléfono: <span id="phone-validation"></span></label>
+  <input id="phone" name="phone" />
+  <br />
+  <label >Experiencia: <span id="experience-validation"></span></label>
+  <input id="experience" name="experience" />
+  <br />
+  <label for="reason">Cargo al que me postulo:  <span id="reason-validation"></span></label>
+  <textarea id="reason" name="reason" rows="5" cols="30" ></textarea>
+  <br>
+  <input
+    type="submit"
+    name="submit"
+    value="Enviar Postulación"
+    class="btn btn-primary"
+  />
+  
+  
+
 
 
 
@@ -137,9 +154,13 @@
           <li><a href="informacionsobreseguros.html">Información sobre seguros</a></li>
         </ul>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js" integrity="sha512-8GLIg5ayTvD6F9ML/cSRMD19nHqaLPWxISikfc5hsMJyX7Pm+IIbHlhBDY2slGisYLBqiVNVll+71CYDD5RBqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./scripts/work-form.js"></script>
       <script type='module' src="main.js"></script>
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </body>
   </html>
+  
  
+
 
