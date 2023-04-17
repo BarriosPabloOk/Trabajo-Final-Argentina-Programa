@@ -141,10 +141,15 @@ footer li a:hover{
 .filtro{
   display: none;
 }
+/*----------------------------------------------------------------------*/
 
+/*----------------------MENU MOBIL-------------------*/
 
 .nav__ul{
 	display: none;
+}
+.nav__footer{
+  display: none;
 }
 
 @media only screen and (max-width:600px){
@@ -186,7 +191,7 @@ footer li a:hover{
 		/*height: calc(100vh-64px); si va al 100%px va a cubrir todo si le saco el heigh es hasta donde tenga el texto*/
 		position: absolute;
 		display: block;
-		left: -700px;
+		left: -1700px;
 		transition: all 1.2s;
 		}
 
@@ -214,8 +219,12 @@ nav ul li {
 header{
   margin: 0px;
 }
-footer ul li{
-  display: block;
-	flex-wrap: wrap; /*cuando no haya mas resulucion la caja que sobra pasa para abajo*/
+.footer{
+  display: none;
+}
+.nav__footer{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 }
 }
