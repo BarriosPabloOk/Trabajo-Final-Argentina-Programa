@@ -163,6 +163,9 @@ footer li a:hover{
 		margin: 0px;
 	}
 	
+	.divcentrado {
+		width: 100%;
+	}
 
 	.navul{
 		display: none;
